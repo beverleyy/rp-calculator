@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Rank Point Calculator</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Graduate' rel='stylesheet'>
+  
+    <link href="main.css" rel="stylesheet"> 
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="scripts.js"></script>
+    
+</head>
+<body>
+
+    <header>
+        <h1>Rank Point Calculator</h1>
+        <p>Singapore GCE 'A' Level</p>
+    </header>
+ 
+    <main>
+        <section class="subs">
+            <p>
+                If you take KI, set "H1 Subject" to the same value as "GP/KI".
+                <br>
+                RP with MTL is only shown if MTL increases your RP.
+            </p>
+            <form>
+                <label for="gp">GP/KI:</label>
+                <select name="gp" id="gp">
+                    <option value="10">A</option>
+                    <option value="8.75">B</option>
+                    <option value="7.5">C</option>
+                    <option value="6.25">D</option>
+                    <option value="5">E</option>
+                    <option value="2.5">S</option>
+                    <option value="0">U</option>
+                </select>
+                <br>
+                <label for="pw">PW:</label>
+                <select name="pw" id="pw">
+                    <option value="10">A</option>
+                    <option value="8.75">B</option>
+                    <option value="7.5">C</option>
+                    <option value="6.25">D</option>
+                    <option value="5">E</option>
+                    <option value="2.5">S</option>
+                    <option value="0">U</option>
+                </select>
+                <br>
+                <label for="four">H1 Subject:</label>
+                <select name="four" id="four">
+                    <option value="10">A</option>
+                    <option value="8.75">B</option>
+                    <option value="7.5">C</option>
+                    <option value="6.25">D</option>
+                    <option value="5">E</option>
+                    <option value="2.5">S</option>
+                    <option value="0">U</option>
+                </select>
+                <br>
+                <label for="one">H2 Subject 1:</label>
+                <select name="one" id="one">
+                    <option value="20">A</option>
+                    <option value="17.5">B</option>
+                    <option value="15">C</option>
+                    <option value="12.5">D</option>
+                    <option value="10">E</option>
+                    <option value="5">S</option>
+                    <option value="0">U</option>
+                </select>
+                <br>
+                <label for="two">H2 Subject 2:</label>
+                <select name="two" id="two">
+                    <option value="20">A</option>
+                    <option value="17.5">B</option>
+                    <option value="15">C</option>
+                    <option value="12.5">D</option>
+                    <option value="10">E</option>
+                    <option value="5">S</option>
+                    <option value="0">U</option>
+                </select>
+                <br>
+                <label for="three">H2 Subject 3:</label>
+                <select name="three" id="three">
+                    <option value="20">A</option>
+                    <option value="17.5">B</option>
+                    <option value="15">C</option>
+                    <option value="12.5">D</option>
+                    <option value="10">E</option>
+                    <option value="5">S</option>
+                    <option value="0">U</option>
+                </select>
+                <br>
+                <label for="mtl">MTL:</label>
+                <select name="mtl" id="mtl">
+                    <option value="10">A</option>
+                    <option value="8.75">B</option>
+                    <option value="7.5">C</option>
+                    <option value="6.25">D</option>
+                    <option value="5">E</option>
+                    <option value="2.5">S</option>
+                    <option value="0">U</option>
+                </select>
+              </form>
+        </section>  
+        <section class="output">
+            <h2>RP without MTL:</h2>
+            <span id="no_mtl"></span>
+            <br> 
+            <h2>RP with MTL:</h2>
+            <span id="with_mtl"></span>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://github.com/beverleyy/rp-calculator">GitHub repository</a>  
+        <p>
+            Made with &hearts; by Bev Yeo <br>
+            &copy; 2016-2023
+        </p>
+    </footer>
+    
+</body>
+</html>

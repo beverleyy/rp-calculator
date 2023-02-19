@@ -34,28 +34,6 @@ header {
     color: #fcfcfc;
 }
 
-header::before {
-    content:"";
-    display: block;
-    z-index: -1;
-    background: linear-gradient(45deg, #8c1515, #ffcb05, #8c1515);
-    background-size: 600% auto;
-    -webkit-filter: blur(15px);
-    -ms-filter: blur(15px);
-    filter: blur(15px);
-    animation:line 15s linear infinite;
-    border-radius: 50%;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-@keyframes line {
-    0% {background-position:0% 50%;}
-    50% {background-position:300% 50%;}
-    100% {background-position:600% 50%;}
-}
-
 header h1 {
     font: 2em/150% "Graduate",sans-serif;
     margin: 0;
@@ -65,12 +43,6 @@ header p {
     margin: 0;
     font-size: 12px;
     letter-spacing: 5px;
-}
-
-@keyframes switch {
-    0% {box-shadow: 0 0 15px 5px #8c1515;}
-    50% {box-shadow: 0 0 15px 5px #ffcb05;}
-    100% {box-shadow: 0 0 15px 5px #8c1515;}
 }
 
 main {

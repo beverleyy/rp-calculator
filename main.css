@@ -1,16 +1,16 @@
 ::selection {
     background: #00274c;
-    color: #ffffff;
+    color: #ffcb05;
 }
 
 ::-webkit-selection {
     background: #00274c;
-    color: #ffffff;
+    color: #ffcb05;
 }
 
 ::-moz-selection {
     background: #00274c;
-    color: #ffffff;
+    color: #ffcb05;
 }
 
 body {
@@ -99,11 +99,11 @@ footer p {
 footer a {
     font:0.75em/1.5em "Graduate";
     text-transform:uppercase;
-    color:#8c1515;
+    color:#00274c;
     background: linear-gradient(
         to left, 
-        #8c1515 calc(50% - 4px), 
-        rgba(140,21,21,0) calc(50% - 4px), 
+        #00274c calc(50% - 4px), 
+        rgba(0,39,76,0) calc(50% - 4px), 
         rgba(255,203,5,0) calc(50% + 4px), 
         #ffcb05 calc(50% + 4px)
     );
